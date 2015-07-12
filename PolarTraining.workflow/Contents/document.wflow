@@ -1288,7 +1288,8 @@ end run</string>
 				<dict>
 					<key>COMMAND_STRING</key>
 					<string>cd $1
-python ~/Git/tcx-creator/tcxcreator.py</string>
+python ~/Git/tcx-creator/tcxcreator.py
+find . -maxdepth 1 -type f -mtime -1 -name "*.tcx" -exec cp {} /Users/$USER/Dropbox/Apps/tapiriik \;</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
